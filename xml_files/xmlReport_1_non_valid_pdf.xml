@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+  <buildInformation>
+    <releaseDetails id="core" version="1.18.11" buildDate="2021-04-19T10:21:00+01:00"></releaseDetails>
+    <releaseDetails id="validation-model" version="1.18.8" buildDate="2021-04-19T10:35:00+01:00"></releaseDetails>
+    <releaseDetails id="gui" version="1.18.6" buildDate="2021-04-27T08:53:00+01:00"></releaseDetails>
+  </buildInformation>
+  <jobs>
+    <job>
+      <item size="3811750">
+        <name>/Users/sebastianlange/Documents/Oxford/work/Micorservices/pdf_analyser/test_pdfs/2nd_file.pdf</name>
+      </item>
+      <validationReport profileName="PDF/A-1B validation profile" statement="PDF file is not compliant with Validation Profile requirements." isCompliant="false">
+        <details passedRules="92" failedRules="9" passedChecks="473452" failedChecks="14236">
+          <rule specification="ISO 19005-1:2005" clause="6.4" testNumber="2" status="failed" passedChecks="0" failedChecks="3">
+            <description>An XObject dictionary shall not contain the SMask key</description>
+            <object>PDXObject</object>
+            <test>containsSMask == false</test>
+            <check status="failed">
+              <context>root/document[0]/pages[8](19 0 obj PDPage)/contentStream[0](20 0 obj PDContentStream)/operators[811]/xObject[0](22 0 obj PDXImage)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[29](80 0 obj PDPage)/contentStream[0](81 0 obj PDContentStream)/operators[620]/xObject[0](88 0 obj PDXImage)</context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.7.9" testNumber="2" status="failed" passedChecks="0" failedChecks="27">
+            <description>Properties specified in XMP form shall use either the predefined schemas defined in XMP Specification, 
+			or extension schemas that comply with XMP Specification</description>
+            <object>XMPProperty</object>
+            <test>(isPredefinedInXMP2004 == true || isDefinedInCurrentPackage == true) &amp;&amp; isValueTypeCorrect == true</test>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.5.3" testNumber="3" status="failed" passedChecks="0" failedChecks="21">
+            <description>An annotation dictionary shall not contain the C array or the IC array unless the colour space of the
+			DestOutputProfile in the PDF/A-1 OutputIntent dictionary, defined in 6.2.2, is RGB</description>
+            <object>PDAnnot</object>
+            <test>(C_size == 0 &amp;&amp; IC_size == 0) || gOutputCS == "RGB "</test>
+            <check status="failed">
+              <context>root/document[0]/pages[3](5 0 obj PDPage)/annots[0](193 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[3](5 0 obj PDPage)/annots[1](194 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[3](5 0 obj PDPage)/annots[2](195 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[4](8 0 obj PDPage)/annots[0](197 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[6](13 0 obj PDPage)/annots[0](199 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[7](16 0 obj PDPage)/annots[0](201 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[8](19 0 obj PDPage)/annots[0](203 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[9](24 0 obj PDPage)/annots[3](206 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[10](28 0 obj PDPage)/annots[0](208 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[10](28 0 obj PDPage)/annots[1](209 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[10](28 0 obj PDPage)/annots[2](210 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[11](31 0 obj PDPage)/annots[0](212 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[11](31 0 obj PDPage)/annots[1](213 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[14](39 0 obj PDPage)/annots[0](215 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[14](39 0 obj PDPage)/annots[1](216 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[17](49 0 obj PDPage)/annots[0](219 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[21](59 0 obj PDPage)/annots[0](221 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[28](77 0 obj PDPage)/annots[0](223 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[28](77 0 obj PDPage)/annots[1](224 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[34](100 0 obj PDPage)/annots[4](228 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[38](109 0 obj PDPage)/annots[0](230 0 obj PDAnnot)</context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.2.3" testNumber="4" status="failed" passedChecks="0" failedChecks="14119">
+            <description>If an uncalibrated colour space is used in a file then that file shall contain a PDF/A-1 OutputIntent, as defined in 6.2.2</description>
+            <object>PDDeviceGray</object>
+            <test>gOutputCS != null</test>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[4]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[5]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[8]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[15]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[19]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[23]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[27]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[30]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[34]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[38]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[42]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[49]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[53]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[57]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[59]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[63]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[67]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[71]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[74]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[76]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[82]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[86]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[90]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[96]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[99]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[101]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[105]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[109]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[113]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[117]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[119]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[120]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[122]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[124]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[125]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[129]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[133]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[137]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[141]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[145]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[149]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[152]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[154]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[158]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[161]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[162]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[166]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[170]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[174]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[177]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[179]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[185]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[191]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[195]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[198]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[202]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[206]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[208]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[210]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[212]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[213]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[214]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[218]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[222]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[226]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[230]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[232]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[236]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[240]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[244]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[245]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[249]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[252]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[257]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[259]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[263]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[267]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[272]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[276]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[280]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[284]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[288]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[292]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[296]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[300]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[304]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[308]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[312]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[316]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[320]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[324]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[328]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[332]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[336]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[0](1268 0 obj PDPage)/contentStream[0](1273 0 obj PDContentStream)/operators[340]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[1](1 0 obj PDPage)/contentStream[0](2 0 obj PDContentStream)/operators[4]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[1](1 0 obj PDPage)/contentStream[0](2 0 obj PDContentStream)/operators[5]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[1](1 0 obj PDPage)/contentStream[0](2 0 obj PDContentStream)/operators[8]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[1](1 0 obj PDPage)/contentStream[0](2 0 obj PDContentStream)/operators[15]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[1](1 0 obj PDPage)/contentStream[0](2 0 obj PDContentStream)/operators[19]/fillCS[0]</context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.5.3" testNumber="2" status="failed" passedChecks="0" failedChecks="13">
+            <description>An annotation dictionary shall contain the F key. The F key’s Print flag bit shall be set to 1 and its Hidden,
+			Invisible and NoView flag bits shall be set to 0</description>
+            <object>PDAnnot</object>
+            <test>F != null &amp;&amp; (F &amp; 4) == 4 &amp;&amp; (F &amp; 1) == 0 &amp;&amp; (F &amp; 2) == 0 &amp;&amp; (F &amp; 32) == 0</test>
+            <check status="failed">
+              <context>root/document[0]/pages[9](24 0 obj PDPage)/annots[0](1047 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[9](24 0 obj PDPage)/annots[1](1045 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[9](24 0 obj PDPage)/annots[2](1043 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[15](43 0 obj PDPage)/annots[0](953 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[15](43 0 obj PDPage)/annots[1](951 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[32](94 0 obj PDPage)/annots[0](719 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[32](94 0 obj PDPage)/annots[1](717 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[34](100 0 obj PDPage)/annots[0](695 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[34](100 0 obj PDPage)/annots[1](691 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[34](100 0 obj PDPage)/annots[2](689 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[34](100 0 obj PDPage)/annots[3](687 0 obj PDLinkAnnot)</context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.2.3" testNumber="2" status="failed" passedChecks="0" failedChecks="30">
+            <description>DeviceRGB may be used only if the file has a PDF/A-1 OutputIntent that uses an RGB colour space</description>
+            <object>PDDeviceRGB</object>
+            <test>gOutputCS != null &amp;&amp; gOutputCS == "RGB "</test>
+            <check status="failed">
+              <context>root/document[0]/pages[8](19 0 obj PDPage)/contentStream[0](20 0 obj PDContentStream)/operators[811]/xObject[0](22 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[8](19 0 obj PDPage)/Group[0](204 0 obj PDGroup)/colorSpace[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[9](24 0 obj PDPage)/contentStream[0](25 0 obj PDContentStream)/operators[1004]/xObject[0](26 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[12](34 0 obj PDPage)/contentStream[0](35 0 obj PDContentStream)/operators[959]/xObject[0](36 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[14](39 0 obj PDPage)/contentStream[0](40 0 obj PDContentStream)/operators[836]/xObject[0](41 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[15](43 0 obj PDPage)/contentStream[0](44 0 obj PDContentStream)/operators[887]/xObject[0](45 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[20](56 0 obj PDPage)/contentStream[0](57 0 obj PDContentStream)/operators[709]/colorSpace[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[20](56 0 obj PDPage)/contentStream[0](57 0 obj PDContentStream)/operators[713]/fillCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[20](56 0 obj PDPage)/contentStream[0](57 0 obj PDContentStream)/operators[736]/xObject[0](58 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[21](59 0 obj PDPage)/contentStream[0](60 0 obj PDContentStream)/operators[806]/xObject[0](61 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[24](67 0 obj PDPage)/contentStream[0](68 0 obj PDContentStream)/operators[761]/xObject[0](69 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[26](72 0 obj PDPage)/contentStream[0](73 0 obj PDContentStream)/operators[695]/xObject[0](74 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[29](80 0 obj PDPage)/contentStream[0](81 0 obj PDContentStream)/operators[601]/xObject[0](85 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[29](80 0 obj PDPage)/contentStream[0](81 0 obj PDContentStream)/operators[613]/xObject[0](86 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[29](80 0 obj PDPage)/contentStream[0](81 0 obj PDContentStream)/operators[620]/xObject[0](88 0 obj PDXImage)/imageCS[0](259 0 obj PDIndexed)/base[0]</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[33](97 0 obj PDPage)/contentStream[0](98 0 obj PDContentStream)/operators[307]/xObject[0](99 0 obj PDXImage)/imageCS[0]</context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+            <check status="failed">
+              <context></context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.5.3" testNumber="1" status="failed" passedChecks="0" failedChecks="21">
+            <description>An annotation dictionary shall not contain the CA key with a value other than 1.0</description>
+            <object>PDAnnot</object>
+            <test>CA == null || CA == 1.0</test>
+            <check status="failed">
+              <context>root/document[0]/pages[3](5 0 obj PDPage)/annots[0](193 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[3](5 0 obj PDPage)/annots[1](194 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[3](5 0 obj PDPage)/annots[2](195 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[4](8 0 obj PDPage)/annots[0](197 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[6](13 0 obj PDPage)/annots[0](199 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[7](16 0 obj PDPage)/annots[0](201 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[8](19 0 obj PDPage)/annots[0](203 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[9](24 0 obj PDPage)/annots[3](206 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[10](28 0 obj PDPage)/annots[0](208 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[10](28 0 obj PDPage)/annots[1](209 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[10](28 0 obj PDPage)/annots[2](210 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[11](31 0 obj PDPage)/annots[0](212 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[11](31 0 obj PDPage)/annots[1](213 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[14](39 0 obj PDPage)/annots[0](215 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[14](39 0 obj PDPage)/annots[1](216 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[17](49 0 obj PDPage)/annots[0](219 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[21](59 0 obj PDPage)/annots[0](221 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[28](77 0 obj PDPage)/annots[0](223 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[28](77 0 obj PDPage)/annots[1](224 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[34](100 0 obj PDPage)/annots[4](228 0 obj PDAnnot)</context>
+            </check>
+            <check status="failed">
+              <context>root/document[0]/pages[38](109 0 obj PDPage)/annots[0](230 0 obj PDAnnot)</context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.7.11" testNumber="1" status="failed" passedChecks="0" failedChecks="1">
+            <description>The PDF/A version and conformance level of a file shall be specified using the PDF/A Identification extension schema.</description>
+            <object>MainXMPPackage</object>
+            <test>Identification_size == 1</test>
+            <check status="failed">
+              <context></context>
+            </check>
+          </rule>
+          <rule specification="ISO 19005-1:2005" clause="6.4" testNumber="3" status="failed" passedChecks="0" failedChecks="1">
+            <description>A Group object with an S key with a value of Transparency shall not be included in a form XObject. 
+			A Group object with an S key with a value of Transparency shall not be included in a page dictionary</description>
+            <object>PDGroup</object>
+            <test>S != "Transparency"</test>
+            <check status="failed">
+              <context>root/document[0]/pages[8](19 0 obj PDPage)/Group[0](204 0 obj PDGroup)</context>
+            </check>
+          </rule>
+        </details>
+      </validationReport>
+      <duration start="1642503064147" finish="1642503065546">00:00:01.399</duration>
+    </job>
+  </jobs>
+  <batchSummary totalJobs="1" failedToParse="0" encrypted="0">
+    <validationReports compliant="0" nonCompliant="1" failedJobs="0">1</validationReports>
+    <featureReports failedJobs="0">0</featureReports>
+    <repairReports failedJobs="0">0</repairReports>
+    <duration start="1642503064138" finish="1642503065553">00:00:01.415</duration>
+  </batchSummary>
+</report>
